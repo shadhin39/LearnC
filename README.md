@@ -20,3 +20,5 @@
 * Go to File->Open->C:\Users\Fardin(Signed in Profile Name)\AndroidStudioProjects->LearnC-master and open
 * Finally run the Project
 
+#Screenshots
+* **How To Run The Project** *
