@@ -1,5 +1,6 @@
 # How to run "LearnC" android app on your android studio emulator or android phone(using android studio) 
 
+> Install "Android Studio" On your Pc 
 
 *  1st Download the zip file 
 * Unzip the file and if you have "Android Studio" application in your system's C drive then place/paste the unzipped file in the following directory("C:\Users\Fardin(Signed in Profile Name)\AndroidStudioProjects")  
