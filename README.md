@@ -18,5 +18,5 @@
 * Instead of Fardin use your Currently Signed in profile name where you installed your "Android Studio" Application
 * Now open "Android Studio" Application
 * Go to File->Open->C:\Users\Fardin(Signed in Profile Name)\AndroidStudioProjects->LearnC-master and open
-* Now run the Project
+* Finally run the Project
 
