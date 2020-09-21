@@ -5,7 +5,7 @@ CSE 3224 Informative System Design And Software Engineering Lab
 Developed In *Android Studio 3.8*
 
 # Language
-** Java **
+ * **Java**
 
 # How to run "LearnC" android app
 
