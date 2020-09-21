@@ -2,7 +2,7 @@
 * CSE 3224 Informative System Design And Software Engineering Lab
 
 # Platform
-* Developed In *Android Studio 3.0.1*
+* Developed In *Android Studio 4.0.1*
 
 # Language
  * **Java**
