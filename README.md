@@ -20,5 +20,9 @@
 * Go to File->Open->C:\Users\Fardin(Signed in Profile Name)\AndroidStudioProjects->LearnC-master and open
 * Finally run the Project
 
-# Screenshots
-* **How To Run The Project** *
+# Features
+- User can learn **C Programming** through *Online Tuorials* and *Offline Tutorials*
+- User can give *Quiz* based on **Programming Language C**. User must be signned in to give the *Quiz*
+- User can Run run his/her on own **Code** in the online platform 
+- User can solve some question of well known **Online Judge** as well they can see the solutions
+- For preparing himself/herself there are some frequently asked **Viva Board** questions
