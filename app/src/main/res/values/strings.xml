@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">LearnC</string>
+    <string-array name="control_names">
+        <item> If </item>
+        <item> Else If </item>
+        <item> While </item>
+        <item> Do While </item>
+        <item> For </item>
+        <item> Switch </item>
+        <item> Break </item>
+        <item> Continue </item>
+        <item> Goto </item>
+    </string-array>
+
+
+    <string-array name="String_names">
+        <item> String </item>
+        <item> String cmp </item>
+        <item> String concate </item>
+        <item> String copy </item>
+        <item> String Func </item>
+        <item> String gets puts </item>
+        <item> String length </item>
+        <item> String reverse </item>
+        <item> String wr </item>
+        <item> String str </item>
+    </string-array>
+    <string-array name="Pre_names">
+        <item> Directives </item>
+        <item> Macros </item>
+        <item> #include </item>
+        <item> #define </item>
+        <item> #undef </item>
+        <item>  #ifdef </item>
+        <item> #ifndef </item>
+        <item> #if </item>
+        <item> #else </item>
+        <item> #error </item>
+        <item> #pragma </item>
+    </string-array>
+
+    <string-array name="vivaques">
+        <item>   What is a pointer on pointer? </item>
+        <item>   Distinguish between malloc() and calloc() memory allocation. </item>
+        <item>   What is keyword auto for? </item>
+        <item>   What are the valid places for the keyword break to appear. </item>
+        <item>   Explain the syntax for for loop. </item>
+        <item>   What is lvalue and rvalue? </item>
+        <item>   How a negative integer is stored. </item>
+        <item>   What is a static variable? </item>
+        <item>   What is a NULL pointer? </item>
+        <item>   What is the purpose of extern storage specifier? </item>
+        <item>   Explain the purpose of the function sprintf(). </item>
+        <item>   What is the meaning of base address of the array? </item>
+        <item>   When should we use the register storage specifier? </item>
+        <item>   S++ or S = S+1, which can be recommended to increment the value by 1 and why? </item>
+        <item>   What is a dangling pointer? </item>
+    </string-array>
+
+
+    <string-array name="vivaand">
+        <item> It’s a pointer variable which can hold the address of another pointer variable.
+
+             /nIt de-refers twice to point to the data held by the designated pointer variable.
+        </item>
+        <item> Both allocates memory from heap area/dynamic memory.
+            /nBy default calloc fills the allocated memory with 0’s.
+        </item>
+        <item> By default every local variable of the function is automatic (auto).
+                  /nIn the below function both the variables ‘i’ and ‘j’ are automatic variables.
+                   /nvoid f() {
+                   /n int i;
+                   /n auto int j;
+                   /n }
+        </item>
+        <item> When control reaches for expression-1 is executed first.
+            /nThen following expression-2, and if expression-2 evaluates to non-zero ‘set of statements’ and expression-3 is executed, follows expression-2. </item>
+        <item> for(expression-1;expression-2;expression-3) {
+               /n//set of statements
+            }
+          </item>
+        <item>  The expression appearing on right side of the assignment operator is called as rvalue.
+            /nRvalue is assigned to lvalue, which appears on left side of the assignment operator.
+            /nThe lvalue should designate to a variable not a constant. </item>
+        <item> Get the two’s compliment of the same positive integer. Eg: 1011 (-5)
+
+                /nStep-1 − One’s compliment of 5 : 1010
+
+                /nStep-2 − Add 1 to above, giving 1011, which is -5 </item>
+        <item> A static local variables retains its value between the function call and the default value is 0. The following function will print 1 2 3 if called thrice.
+
+            /nvoid f() {
+                   /nstatic int i;
+                  /n++i;
+                  /nprintf(“%d “,i);
+               /n}
+           /nIf a global variable is static then its visibility is limited to the same source code.
+        </item>
+        <item>A pointer pointing to nothing is called so. Eg: char *p=NULL; </item>
+        <item>Used to resolve the scope of global symbol.
+
+
+          /n Eg:
+           /n     main() {
+             /n      extern int i;
+             /n      Printf(“%d”,i);
+           /n     }
+
+            /n    int i = 20;
+
+        </item>
+        <item> Prints the formatted output onto the character array. </item>
+        <item> The starting address of the array is called as the base address of the array. </item>
+        <item> If a variable is used most frequently then it should be declared using register storage specifier, then possibly the compiler gives CPU register for its storage to speed up the look up of the variable. </item>
+        <item> S++, as it is single machine instruction (INC) internally. </item>
+        <item> A pointer initially holding valid address, but later the held address is released or freed. Then such a pointer is called as dangling pointer. </item>
+    </string-array>
+
+
+    <string name="title_activity_condition_theory">Condition_theory</string>
+
+
+</resources>

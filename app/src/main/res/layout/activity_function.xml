@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#094047"
+    tools:context=".Function">
+
+
+    <Button
+        android:id="@+id/Function"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Function"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+    <Button
+        android:id="@+id/Value_and_reference"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="60dp"
+        android:text="Value and reference"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+    <Button
+        android:id="@+id/Recursion"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Recursion"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+    <Button
+        android:id="@+id/Storage_class"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Storage class"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+
+
+
+</LinearLayout>

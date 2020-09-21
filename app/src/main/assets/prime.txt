@@ -1,0 +1,33 @@
+    Prime Number program in C
+
+Prime number in C: Prime number is a number that is greater than 1 and divided by 1 or itself. In other words, prime numbers can't be divided by other numbers than itself or 1. For example 2, 3, 5, 7, 11, 13, 17, 19, 23.... are the prime numbers.
+Note: Zero (0) and 1 are not considered as prime numbers. Two (2) is the only one even prime number because all the numbers can be divided by 2.
+Let's see the prime number program in C. In this c program, we will take an input from the user and check whether the number is prime or not.
+
+#include<stdio.h>  
+int main(){    
+int n,i,m=0,flag=0;    
+printf("Enter the number to check prime:");    
+scanf("%d",&n);    
+m=n/2;    
+for(i=2;i<=m;i++)    
+{    
+if(n%i==0)    
+{    
+printf("Number is not prime");    
+flag=1;    
+break;    
+}    
+}    
+if(flag==0)    
+printf("Number is prime");     
+return 0;  
+ }
+
+
+Output:
+Enter the number to check prime:56
+Number is not prime
+Enter the number to check prime:23
+Number is prime
+

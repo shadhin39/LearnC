@@ -1,0 +1,43 @@
+ C #pragma
+
+The #pragma preprocessor directive is used to provide additional information to the compiler. The #pragma directive is used by the compiler to offer machine or operating-system feature.
+Syntax:
+
+#pragma token  
+Different compilers can provide different usage of #pragma directive.
+The turbo C++ compiler supports following #pragma directives.
+
+#pragma argsused  
+#pragma exit  
+#pragma hdrfile  
+#pragma hdrstop  
+#pragma inline  
+#pragma option  
+#pragma saveregs  
+#pragma startup  
+#pragma warn  
+Let's see a simple example to use #pragma preprocessor directive.
+
+#include<stdio.h>  
+#include<conio.h>  
+  
+void func() ;  
+  
+#pragma startup func  
+#pragma exit func  
+  
+void main(){  
+printf("\nI am in main");  
+getch();  
+}  
+  
+void func(){  
+printf("\nI am in func");  
+getch();  
+}
+
+Output:
+I am in func
+I am in main
+I am in func
+

@@ -1,0 +1,36 @@
+   C #else
+
+The #else preprocessor directive evaluates the expression or condition if condition of #if is false. It can be used with #if, #elif, #ifdef and #ifndef directives.
+Syntax:
+
+#if expression  
+//if code  
+#else  
+//else code  
+#endif  
+Syntax with #elif:
+
+#if expression  
+//if code  
+#elif expression  
+//elif code  
+#else  
+//else code  
+#endif  
+C #else example
+Let's see a simple example to use #else preprocessor directive.
+
+#include <stdio.h>  
+#include <conio.h>  
+#define NUMBER 1  
+void main() {  
+#if NUMBER==0  
+printf("Value of Number is: %d",NUMBER);  
+#else  
+print("Value of Number is non-zero");  
+#endif         
+getch();  
+}  
+Output:
+Value of Number is non-zero
+

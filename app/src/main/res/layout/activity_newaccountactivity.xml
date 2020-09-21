@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RoyalBlue"
+
+    android:orientation="vertical"
+    tools:context=".Newaccountactivity">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/user"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <EditText
+        android:id="@+id/Emailtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/editstyle"
+        android:hint="Enter Email ID"
+        android:textColor="@color/Black" />
+    <EditText
+        android:id="@+id/Usernametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/editstyle"
+        android:hint="Enter Your Name"
+        android:textColor="@color/Black"
+        />
+    <EditText
+        android:id="@+id/PasswordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/editstyle"
+        android:inputType="textPassword"
+        android:hint="Enter Your Password"
+        android:textColor="@color/Black"
+        />
+
+
+    <Button
+        android:id="@+id/Savedetails"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonstyle"
+
+        android:textColor="@color/Black"
+        android:text="Save"
+        android:layout_height="50dp" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+    C #if
+
+The #if preprocessor directive evaluates the expression or condition. If condition is true, it executes the code otherwise #elseif or #else or #endif code is executed.
+Syntax:
+
+#if expression  
+//code  
+#endif  
+Syntax with #else:
+
+#if expression  
+//if code  
+#else  
+//else code  
+#endif  
+Syntax with #elif and #else:
+
+#if expression  
+//if code  
+#elif expression  
+//elif code  
+#else  
+//else code  
+#endif  
+C #if example
+Let's see a simple example to use #if preprocessor directive.
+
+#include <stdio.h>  
+#include <conio.h>  
+#define NUMBER 0  
+void main() {  
+#if (NUMBER==0)  
+printf("Value of Number is: %d",NUMBER);  
+#endif         
+getch();  
+}
+
+
+Output:
+Value of Number is: 0
+Let's see another example to understand the #if directive clearly.
+
+#include <stdio.h>    
+#include <conio.h>    
+#define NUMBER 1  
+void main() {  
+clrscr();  
+#if (NUMBER==0)  
+printf("1 Value of Number is: %d",NUMBER);  
+#endif  
+  
+#if (NUMBER==1)  
+printf("2 Value of Number is: %d",NUMBER);  
+#endif  
+getch();  
+}
+
+
+Output:
+2 Value of Number is: 1
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#094047"
+    tools:context=".Filehandeling">
+
+
+    <Button
+        android:id="@+id/file_hand_main_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Filehandeling"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+
+    <Button
+        android:id="@+id/fprintf_id"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Fprintf and Fscanf"
+        android:textAllCaps="false"
+        android:textColor="@color/Black" />
+    <Button
+        android:id="@+id/fputc_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Fputc Fgetc"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+
+    <Button
+        android:id="@+id/fputs_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Fputc Fgetc"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+    <Button
+        android:id="@+id/fseek_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="60dp"
+        android:text="Fseek"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+    <Button
+        android:id="@+id/ftell_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Ftell"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+
+    <Button
+        android:id="@+id/frewind_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Frewind"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+
+
+</LinearLayout>

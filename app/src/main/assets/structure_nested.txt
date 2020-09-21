@@ -1,0 +1,154 @@
+Nested Structure in C
+
+C provides us the feature of nesting one structure within another structure by using which, complex data types are created. For example, we may need to store the address of an entity employee in a structure. The attribute address may also have the subparts as street number, city, state, and pin code. Hence, to store the address of the employee, we need to store the address of the employee into a separate structure and nest the structure address into the structure employee. Consider the following program.
+
+#include<stdio.h>  
+struct address   
+{  
+    char city[20];  
+    int pin;  
+    char phone[14];  
+};  
+struct employee  
+{  
+    char name[20];  
+    struct address add;  
+};  
+void main ()  
+{  
+    struct employee emp;  
+    printf("Enter employee information?\n");  
+    scanf("%s %s %d %s",emp.name,emp.add.city, &emp.add.pin, emp.add.phone);  
+    printf("Printing the employee information....\n");  
+    printf("name: %s\nCity: %s\nPincode: %d\nPhone: %s",emp.name,emp.add.city,emp.add.pin,emp.add.phone);  
+}  
+Output
+Enter employee information?
+
+Arun            
+
+Delhi           
+
+110001       
+
+1234567890    
+
+Printing the employee information....   
+
+name: Arun      
+
+City: Delhi  
+
+Pincode: 110001
+
+Phone: 1234567890
+
+The structure can be nested in the following ways.
+By separate structure 
+By Embedded structure
+1) Separate structure
+Here, we create two structures, but the dependent structure should be used inside the main structure as a member. Consider the following example.
+
+struct Date  
+{  
+   int dd;  
+   int mm;  
+   int yyyy;   
+};  
+struct Employee  
+{     
+   int id;  
+   char name[20];  
+   struct Date doj;  
+}emp1;  
+As you can see, doj (date of joining) is the variable of type Date. Here doj is used as a member in Employee structure. In this way, we can use Date structure in many structures.
+
+
+2) Embedded structure
+The embedded structure enables us to declare the structure inside the structure. Hence, it requires less line of codes but it can not be used in multiple data structures. Consider the following example.
+
+struct Employee  
+{     
+   int id;  
+   char name[20];  
+   struct Date  
+    {  
+      int dd;  
+      int mm;  
+      int yyyy;   
+    }doj;  
+}emp1;  
+
+Accessing Nested Structure
+We can access the member of the nested structure by Outer_Structure.Nested_Structure.member as given below:
+
+e1.doj.dd  
+e1.doj.mm  
+e1.doj.yyyy  
+
+C Nested Structure example
+Let's see a simple example of the nested structure in C language.
+
+#include <stdio.h>  
+#include <string.h>  
+struct Employee  
+{     
+   int id;  
+   char name[20];  
+   struct Date  
+    {  
+      int dd;  
+      int mm;  
+      int yyyy;   
+    }doj;  
+}e1;  
+int main( )  
+{  
+   //storing employee information  
+   e1.id=101;  
+   strcpy(e1.name, "Sonoo Jaiswal");//copying string into char array  
+   e1.doj.dd=10;  
+   e1.doj.mm=11;  
+   e1.doj.yyyy=2014;  
+  
+   //printing first employee information  
+   printf( "employee id : %d\n", e1.id);  
+   printf( "employee name : %s\n", e1.name);  
+   printf( "employee date of joining (dd/mm/yyyy) : %d/%d/%d\n", e1.doj.dd,e1.doj.mm,e1.doj.yyyy);  
+   return 0;  
+}  
+Output:
+employee id : 101
+employee name : Sonoo Jaiswal
+employee date of joining (dd/mm/yyyy) : 10/11/2014
+
+Passing structure to function
+Just like other variables, a structure can also be passed to a function. We may pass the structure members into the function or pass the structure variable at once. Consider the following example to pass the structure variable employee to a function display() which is used to display the details of an employee.
+
+#include<stdio.h>  
+struct address   
+{  
+    char city[20];  
+    int pin;  
+    char phone[14];  
+};  
+struct employee  
+{  
+    char name[20];  
+    struct address add;  
+};  
+void display(struct employee);  
+void main ()  
+{  
+    struct employee emp;  
+    printf("Enter employee information?\n");  
+    scanf("%s %s %d %s",emp.name,emp.add.city, &emp.add.pin, emp.add.phone);  
+    display(emp);  
+}  
+void display(struct employee emp)  
+{  
+  printf("Printing the details....\n");  
+  printf("%s %s %d %s",emp.name,emp.add.city,emp.add.pin,emp.add.phone);  
+}
+
+

@@ -1,0 +1,127 @@
+    Dynamic memory allocation in C
+
+The concept of dynamic memory allocation in c language enables the C programmer to allocate memory at runtime. Dynamic memory allocation in c language is possible by 4 functions of stdlib.h header file.
+malloc()
+calloc()
+realloc()
+free()
+
+Before learning above functions, let's understand the difference between static memory allocation and dynamic memory allocation.
+static memory allocation
+dynamic memory allocation
+memory is allocated at compile time.
+memory is allocated at run time.
+memory can't be increased while executing program.
+memory can be increased while executing program.
+
+
+used in array.
+used in linked list.
+Now let's have a quick look at the methods used for dynamic memory allocation.
+malloc()
+allocates single block of requested memory.
+
+calloc()
+allocates multiple block of requested memory.
+
+realloc()
+reallocates the memory occupied by malloc() or calloc() functions.
+
+free()
+frees the dynamically allocated memory.
+
+malloc() function in C
+The malloc() function allocates single block of requested memory.
+It doesn't initialize memory at execution time, so it has garbage value initially.
+It returns NULL if memory is not sufficient.
+The syntax of malloc() function is given below:
+
+ptr=(cast-type*)malloc(byte-size)  
+Let's see the example of malloc() function.
+
+#include<stdio.h>  
+#include<stdlib.h>  
+int main(){  
+  int n,i,*ptr,sum=0;    
+    printf("Enter number of elements: ");    
+    scanf("%d",&n);    
+    ptr=(int*)malloc(n*sizeof(int));  //memory allocated using malloc    
+    if(ptr==NULL)                         
+    {    
+        printf("Sorry! unable to allocate memory");    
+        exit(0);    
+    }    
+    printf("Enter elements of array: ");    
+    for(i=0;i<n;++i)    
+    {    
+        scanf("%d",ptr+i);    
+        sum+=*(ptr+i);    
+    }    
+    printf("Sum=%d",sum);    
+    free(ptr);     
+return 0;  
+}    
+
+
+Output:
+Enter elements of array: 3
+Enter elements of array: 10
+10
+10
+Sum=30
+
+calloc() function in C
+The calloc() function allocates multiple block of requested memory.
+It initially initialize all bytes to zero.
+It returns NULL if memory is not sufficient.
+The syntax of calloc() function is given below:
+
+ptr=(cast-type*)calloc(number, byte-size)  
+Let's see the example of calloc() function.
+
+#include<stdio.h>  
+#include<stdlib.h>  
+int main(){  
+ int n,i,*ptr,sum=0;    
+    printf("Enter number of elements: ");    
+    scanf("%d",&n);    
+    ptr=(int*)calloc(n,sizeof(int));  //memory allocated using calloc    
+    if(ptr==NULL)                         
+    {    
+        printf("Sorry! unable to allocate memory");    
+        exit(0);    
+    }    
+    printf("Enter elements of array: ");    
+    for(i=0;i<n;++i)    
+    {    
+        scanf("%d",ptr+i);    
+        sum+=*(ptr+i);    
+    }    
+    printf("Sum=%d",sum);    
+    free(ptr);    
+return 0;  
+}   
+
+
+ 
+Output:
+Enter elements of array: 3
+Enter elements of array: 10
+10
+10
+Sum=30
+
+realloc() function in C
+If memory is not sufficient for malloc() or calloc(), you can reallocate the memory by realloc() function. In short, it changes the memory size.
+Let's see the syntax of realloc() function.
+
+ptr=realloc(ptr, new-size)  
+
+free() function in C
+The memory occupied by malloc() or calloc() functions must be released by calling free() function. Otherwise, it will consume memory until program exit.
+Let's see the syntax of free() function.
+
+free(ptr)  
+
+
+

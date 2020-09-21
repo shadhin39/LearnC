@@ -1,0 +1,67 @@
+   C Macros
+
+
+A macro is a segment of code which is replaced by the value of macro. Macro is defined by #define directive. There are two types of macros:
+Object-like Macros
+Function-like Macros
+Object-like Macros
+The object-like macro is an identifier that is replaced by value. It is widely used to represent numeric constants. For example:
+
+#define PI 3.14  
+Here, PI is the macro name which will be replaced by the value 3.14.
+Function-like Macros
+The function-like macro looks like function call. For example:
+
+#define MIN(a,b) ((a)<(b)?(a):(b))    
+Here, MIN is the macro name.
+Visit #define to see the full example of object-like and function-like macros.
+
+
+C Predefined Macros
+ANSI C defines many predefined macros that can be used in c program.
+
+
+1)
+_DATE_
+represents current date in "MMM DD YYYY" format.
+
+
+2)
+_TIME_
+represents current time in "HH:MM:SS" format.
+
+
+3)
+_FILE_
+represents current file name.
+
+
+4)
+_LINE_
+represents current line number.
+
+
+5)
+_STDC_
+It is defined as 1 when compiler complies with the ANSI standard.
+
+C predefined macros example
+File: simple.c
+
+#include<stdio.h>  
+ int main(){    
+   printf("File :%s\n", __FILE__ );    
+   printf("Date :%s\n", __DATE__ );    
+   printf("Time :%s\n", __TIME__ );    
+   printf("Line :%d\n", __LINE__ );    
+   printf("STDC :%d\n", __STDC__ );      
+   return 0;  
+ }
+
+Output:
+File :simple.c
+Date :Dec 6 2015
+Time :12:28:46
+Line :6
+STDC :1
+

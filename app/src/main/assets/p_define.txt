@@ -1,0 +1,27 @@
+C #define
+
+The #define preprocessor directive is used to define constant or micro substitution. It can use any basic data type.
+Syntax:
+
+#define token value  
+Let's see an example of #define to define a constant.
+
+#include <stdio.h>  
+#define PI 3.14  
+main() {  
+   printf("%f",PI);  
+}  
+Output:
+3.140000
+
+
+Let's see an example of #define to create a macro.
+
+#include <stdio.h>  
+#define MIN(a,b) ((a)<(b)?(a):(b))  
+void main() {  
+   printf("Minimum between 10 and 20 is: %d\n", MIN(10,20));    
+}  
+Output:
+Minimum between 10 and 20 is: 10
+

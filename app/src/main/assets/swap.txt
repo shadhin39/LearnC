@@ -1,0 +1,46 @@
+   C Program to swap two numbers without third variable
+
+We can swap two numbers without using third variable. There are two common ways to swap two numbers without using third variable:
+By + and -
+By * and /
+Program 1: Using + and -
+Let's see a simple c example to swap two numbers without using third variable.
+
+#include<stdio.h>  
+ int main()    
+{    
+int a=10, b=20;      
+printf("Before swap a=%d b=%d",a,b);      
+a=a+b;//a=30 (10+20)    
+b=a-b;//b=10 (30-20)    
+a=a-b;//a=20 (30-10)    
+printf("\nAfter swap a=%d b=%d",a,b);    
+return 0;  
+}
+
+
+Output:
+Before swap a=10 b=20
+After swap a=20 b=10
+Program 2: Using * and /
+Let's see another example to swap two numbers using * and /.
+
+#include<stdio.h>  
+#include<stdlib.h>  
+ int main()    
+{    
+int a=10, b=20;      
+printf("Before swap a=%d b=%d",a,b);       
+a=a*b;//a=200 (10*20)    
+b=a/b;//b=10 (200/20)    
+a=a/b;//a=20 (200/10)    
+ system("cls");  
+printf("\nAfter swap a=%d b=%d",a,b);       
+return 0;  
+}
+
+
+Output:
+Before swap a=10 b=20
+After swap a=20 b=10
+

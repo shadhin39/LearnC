@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#094047"
+    tools:context=".OnlineJudgeActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="380dp"
+            android:layout_height="65dp"
+            android:background="#000000"
+            android:padding="10dp"
+            android:src="@drawable/urilogo" />
+
+        <Button
+        android:id="@+id/q1_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Question 1"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+
+    <Button
+        android:id="@+id/q2_id"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Question 2"
+        android:textAllCaps="false"
+        android:textColor="@color/Black" />
+    <Button
+        android:id="@+id/q3_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Question 3"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+
+    <Button
+        android:id="@+id/q4_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Question 4"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+    <Button
+        android:id="@+id/q5_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="60dp"
+        android:text="Question 5"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+    <Button
+        android:id="@+id/q6_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Question 6"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+
+    <Button
+        android:id="@+id/q7_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Question 7"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+    <Button
+        android:id="@+id/q8_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Question 8"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+    <Button
+        android:id="@+id/q9_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Question 9"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+    <Button
+        android:id="@+id/q10_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Question 10"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+        <Button
+            android:id="@+id/q11_id"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="150dp"
+            android:textAllCaps="false"
+            android:layout_height="50dp"
+            android:text="Question 11"
+            android:background="@drawable/buttonstyle"
+            android:textColor="@color/Black"
+            />
+        <Button
+            android:id="@+id/q12_id"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="150dp"
+            android:textAllCaps="false"
+            android:layout_height="50dp"
+            android:text="Question 12"
+            android:background="@drawable/buttonstyle"
+            android:textColor="@color/Black"
+            />
+        <Button
+            android:id="@+id/q13_id"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="150dp"
+            android:textAllCaps="false"
+            android:layout_height="50dp"
+            android:text="Question 13"
+            android:background="@drawable/buttonstyle"
+            android:textColor="@color/Black"
+            />
+
+    </LinearLayout>
+    </ScrollView>>
+</LinearLayout>

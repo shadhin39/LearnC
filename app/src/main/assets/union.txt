@@ -1,0 +1,53 @@
+C Union
+
+Like structure, Union in c language is a user-defined data type that is used to store the different type of elements.
+At once, only one member of the union can occupy the memory. In other words, we can say that the size of the union in any instance is equal to the size of its largest element.
+ 
+Advantage of union over structure
+It occupies less memory because it occupies the size of the largest member only.
+Disadvantage of union over structure
+Only the last entered data can be stored in the union. It overwrites the data previously stored in the union.
+
+Defining union
+The union keyword is used to define the union. Let's see the syntax to define union in c.
+
+union union_name   
+{  
+    data_type member1;  
+    data_type member2;  
+    .  
+    .  
+    data_type memeberN;  
+};  
+Let's see the example to define union for an employee in c.
+
+union employee  
+{   int id;  
+    char name[50];  
+    float salary;  
+};  
+
+
+C Union example
+Let's see a simple example of union in C language.
+
+#include <stdio.h>  
+#include <string.h>  
+union employee    
+{   int id;    
+    char name[50];    
+}e1;  //declaring e1 variable for union  
+int main( )  
+{  
+   //store first employee information  
+   e1.id=101;  
+   strcpy(e1.name, "Sonoo Jaiswal");//copying string into char array  
+   //printing first employee information  
+   printf( "employee 1 id : %d\n", e1.id);  
+   printf( "employee 1 name : %s\n", e1.name);  
+   return 0;  
+}  
+Output:
+employee 1 id : 1869508435
+employee 1 name : Sonoo Jaiswal
+

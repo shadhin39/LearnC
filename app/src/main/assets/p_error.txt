@@ -1,0 +1,35 @@
+ C #error
+
+The #error preprocessor directive indicates error. The compiler gives fatal error if #error directive is found and skips further compilation process.
+C #error example
+Let's see a simple example to use #error preprocessor directive.
+
+#include<stdio.h>  
+#ifndef __MATH_H  
+#error First include then compile  
+#else  
+void main(){  
+    float a;  
+    a=sqrt(7);  
+    printf("%f",a);  
+}  
+#endif  
+Output:
+Compile Time Error: First include then compile
+But, if you include math.h, it does not gives error.
+
+#include<stdio.h>  
+#include<math.h>  
+#ifndef __MATH_H  
+#error First include then compile  
+#else  
+void main(){  
+    float a;  
+    a=sqrt(7);  
+    printf("%f",a);  
+}  
+#endif  
+Output:
+2.645751
+
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/RoyalBlue"
+    tools:context=".Webactivity">
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/Youtubeid"
+        >
+    </com.google.android.youtube.player.YouTubePlayerView>
+
+
+    <Button
+        android:id="@+id/Play"
+        android:layout_width="350dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/buttonstyle"
+        android:layout_height="50dp"
+        android:layout_marginTop="450dp"
+        android:text="Play"
+        />
+
+</RelativeLayout>

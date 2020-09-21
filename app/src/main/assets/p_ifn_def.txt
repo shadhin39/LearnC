@@ -1,0 +1,55 @@
+   C #ifndef
+
+The #ifndef preprocessor directive checks if macro is not defined by #define. If yes, it executes the code otherwise #else code is executed, if present.
+Syntax:
+
+#ifndef MACRO  
+//code  
+#endif  
+Syntax with #else:
+
+#ifndef MACRO  
+//successful code  
+#else  
+//else code  
+#endif  
+C #ifndef example
+Let's see a simple example to use #ifndef preprocessor directive.
+
+#include <stdio.h>  
+#include <conio.h>  
+#define INPUT  
+void main() {  
+int a=0;  
+#ifndef INPUT  
+a=2;  
+#else  
+printf("Enter a:");  
+scanf("%d", &a);  
+#endif         
+printf("Value of a: %d\n", a);  
+getch();  
+}
+
+Output:
+Enter a:5
+Value of a: 5
+But, if you don't define INPUT, it will execute the code of #ifndef.
+
+#include <stdio.h>  
+#include <conio.h>  
+void main() {  
+int a=0;  
+#ifndef INPUT  
+a=2;  
+#else  
+printf("Enter a:");  
+scanf("%d", &a);  
+#endif         
+printf("Value of a: %d\n", a);  
+getch();  
+}
+
+Output:
+Value of a: 2
+

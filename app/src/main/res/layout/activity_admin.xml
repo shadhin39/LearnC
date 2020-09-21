@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Cyan"
+    android:orientation="vertical"
+
+    tools:context=".Admin">
+
+    <EditText
+        android:id="@+id/admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="50sp"
+        android:layout_marginTop="200sp"
+        android:ems="10"
+        android:hint="Enter password to set the Questions"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <Button
+        android:id="@+id/LOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+</LinearLayout>

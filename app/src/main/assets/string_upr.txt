@@ -1,0 +1,20 @@
+C String Uppercase: strupr()
+
+The strupr(string) function returns string characters in uppercase. Let's see a simple example of strupr() function.
+
+#include<stdio.h>  
+#include <string.h>    
+int main(){    
+  char str[20];    
+  printf("Enter string: ");    
+  gets(str);//reads string from console    
+  printf("String is: %s",str);    
+  printf("\nUpper String is: %s",strupr(str));    
+ return 0;    
+}
+
+Output:
+Enter string: javatpoint
+String is: javatpoint
+Upper String is: JAVATPOINT
+

@@ -1,0 +1,31 @@
+  C #undef
+
+The #undef preprocessor directive is used to undefine the constant or macro defined by #define.
+Syntax:
+
+#undef token  
+Let's see a simple example to define and undefine a constant.
+
+#include <stdio.h>  
+#define PI 3.14  
+#undef PI  
+main() {  
+   printf("%f",PI);  
+}
+
+Output:
+Compile Time Error: 'PI' undeclared
+The #undef directive is used to define the preprocessor constant to a limited scope so that you can declare constant again.
+Let's see an example where we are defining and undefining number variable. But before being undefined, it was used by square variable.
+
+#include <stdio.h>  
+#define number 15  
+int square=number*number;  
+#undef number  
+main() {  
+   printf("%d",square);  
+}
+
+Output:
+225
+

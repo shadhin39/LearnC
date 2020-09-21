@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#094047"
+    android:orientation="vertical"
+    tools:context=".Array">
+    <Button
+        android:id="@+id/one_id"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="1D Array"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+    <Button
+        android:id="@+id/two_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="60dp"
+        android:text="2D Array"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+    <Button
+        android:id="@+id/three_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Array to Func"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+</LinearLayout>

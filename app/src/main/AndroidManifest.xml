@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.invisible.learnc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mainicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CreateOnline"></activity>
+        <activity android:name=".videofullscreen" />
+        <activity android:name=".Youtubeactivity" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".Loginactivity" />
+        <activity android:name=".Newaccountactivity" />
+        <activity android:name=".Admin" />
+        <activity android:name=".Tutorialsactivity" />
+        <activity android:name=".control" />
+        <activity android:name=".Function" />
+        <activity android:name=".Array" />
+        <activity android:name=".pointer" />
+        <activity android:name=".Memoryalocation" />
+        <activity android:name=".Mathfunction" />
+        <activity android:name=".Structure" />
+        <activity android:name=".Filehandeling" />
+        <activity android:name=".preprocessor" />
+        <activity android:name=".stringactivity" />
+        <activity android:name=".Function_theoryy" />
+        <activity android:name=".Array_theory" />
+        <activity android:name=".Pointer_theory" />
+        <activity android:name=".Structure_theory" />
+        <activity android:name=".File_hand_theory" />
+        <activity android:name=".Condition_theory" />
+        <activity android:name=".String_theory" />
+        <activity android:name=".Preprocessor_theory" />
+        <activity android:name=".Webactivity" />
+        <activity android:name=".codeactivity" />
+        <activity android:name=".vivaactivity" />
+        <activity android:name=".OnlineJudgeActivity" />
+        <activity android:name=".Question1" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Solution" />
+
+    </application>
+
+</manifest>

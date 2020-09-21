@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#094047"
+    tools:context=".Structure">
+
+
+    <Button
+        android:id="@+id/structure_id"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Structure"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+    <Button
+        android:id="@+id/array_structure_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="60dp"
+        android:text="Array of Structure"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+    <Button
+        android:id="@+id/nested_structure_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Nested structure"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+
+    <Button
+        android:id="@+id/union_id"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:layout_width="150dp"
+        android:textAllCaps="false"
+        android:layout_height="50dp"
+        android:text="Union"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/Black"
+        />
+
+
+</LinearLayout>

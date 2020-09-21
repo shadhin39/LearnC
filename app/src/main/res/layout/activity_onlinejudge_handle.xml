@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#094047"
+    tools:context=".Question1">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="#f3f4ef"
+                android:textSize="16sp" />
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/b1_id"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Solution"
+                android:textAllCaps="false"
+                android:textColor="@color/Black" />
+
+            <Button
+                android:id="@+id/b2_id"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Code Here"
+                android:textAllCaps="false"
+                android:textColor="@color/Black" />
+
+            </TableRow>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

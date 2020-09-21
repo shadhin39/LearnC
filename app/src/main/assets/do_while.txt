@@ -1,0 +1,133 @@
+
+   do while loop in C
+ *********************
+The do while loop is a post tested loop. Using the do-while loop, we can repeat the execution of several parts of the statements. The do-while loop is mainly used in the case where we need to execute the loop at least once. The do-while loop is mostly used in menu-driven programs where the termination condition depends upon the end user.
+do while loop syntax
+The syntax of the C language do-while loop is given below:
+
+
+do{  
+//code to be executed  
+}while(condition);  
+Example 1
+
+
+#include<stdio.h>  
+#include<stdlib.h>  
+void main ()  
+{  
+    char c;  
+    int choice,dummy;    
+    do{  
+    printf("\n1. Print Hello\n2. Print Javatpoint\n3. Exit\n");  
+    scanf("%d",&choice);  
+    switch(choice)  
+    {  
+        case 1 :   
+        printf("Hello");   
+        break;  
+        case 2:    
+        printf("Javatpoint");  
+        break;  
+        case 3:  
+        exit(0);   
+        break;  
+        default:   
+        printf("please enter valid choice");      
+    }  
+    printf("do you want to enter more?");   
+    scanf("%d",&dummy);  
+    scanf("%c",&c);  
+    }while(c=='y');  
+}  
+
+
+Output
+1. Print Hello
+2. Print Javatpoint
+3. Exit
+1
+Hello
+do you want to enter more?
+y
+
+1. Print Hello
+2. Print Javatpoint
+3. Exit
+2
+Javatpoint
+do you want to enter more?
+n
+Flowchart of do while loop
+ 
+
+
+do while example
+There is given the simple program of c language do while loop where we are printing the table of 1.
+
+#include<stdio.h>  
+int main(){    
+int i=1;      
+do{    
+printf("%d \n",i);    
+i++;    
+}while(i<=10);   
+return 0;  
+}     
+Output
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Program to print table for the given number using do while loop
+
+#include<stdio.h>  
+int main(){    
+int i=1,number=0;    
+printf("Enter a number: ");    
+scanf("%d",&number);    
+do{    
+printf("%d \n",(number*i));    
+i++;    
+}while(i<=10);    
+return 0;  
+}    
+Output
+Enter a number: 5
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+Enter a number: 10
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+
+Infinitive do while loop
+The do-while loop will run infinite times if we pass any non-zero value as the conditional expression.
+
+do{  
+//statement  
+}while(1);
+
+
+
