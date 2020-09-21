@@ -1,8 +1,8 @@
 # Learn C
-CSE 3224 Informative System Design And Software Engineering Lab
+* CSE 3224 Informative System Design And Software Engineering Lab
 
 # Platform
-Developed In *Android Studio 3.8*
+* Developed In *Android Studio 3.8*
 
 # Language
  * **Java**
